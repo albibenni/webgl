@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "",
+    "start": "vite",
     "indent:check": "prettier . --check",
     "indent:write": "prettier . --write",
     "prepare": "husky"
@@ -13,7 +13,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "three": "0.176.0",
+    "three-stdlib": "^2.35.16",
+    "vite": "6.3.3",
+    "vite-plugin-glsl": "1.4.1"
+  },
   "devDependencies": {
+    "@types/three": "0.176.0",
     "@eslint/eslintrc": "^3.1.0",
     "@types/eslint": "^9.6.0",
     "@types/node": "^22.9.1",
@@ -22,8 +29,8 @@
     "eslint-config-prettier": "^10.1.0",
     "eslint-plugin-prettier": "^5.2.2",
     "globals": "^16.0.0",
-    "husky": "^9.1.6",
-    "prettier": "^3.3.3",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.15.0",
     "vitest": "^3.1.1"

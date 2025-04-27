@@ -60,6 +60,9 @@ importers:
       typescript-eslint:
         specifier: ^8.15.0
         version: 8.31.0(eslint@9.25.1)(typescript@5.8.3)
+      vite-plugin-restart:
+        specifier: ^0.4.2
+        version: 0.4.2(vite@6.3.3(@types/node@22.15.2))
       vitest:
         specifier: ^3.1.1
         version: 3.1.2(@types/node@22.15.2)
@@ -1060,6 +1063,11 @@ packages:
     engines: {node: '>= 20.17.0', npm: '>= 10.8.3'}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+
+  vite-plugin-restart@0.4.2:
+    resolution: {integrity: sha512-9aWN2ScJ8hbT7aC8SDeZnsbWapnslz1vhNq6Vgf2GU9WdN4NExlrWhtnu7pmtOUG3Guj8y6lPcUZ+ls7SVP33w==}
+    peerDependencies:
+      vite: ^2.9.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
 
   vite@6.3.3:
     resolution: {integrity: sha512-5nXH+QsELbFKhsEfWLkHrvgRpTdGJzqOZ+utSdmPTvwHmvU6ITTm3xx+mRusihkcI8GeC7lCDyn3kDtiki9scw==}
@@ -2063,6 +2071,11 @@ snapshots:
       vite: 6.3.3(@types/node@22.15.2)
     transitivePeerDependencies:
       - rollup
+
+  vite-plugin-restart@0.4.2(vite@6.3.3(@types/node@22.15.2)):
+    dependencies:
+      micromatch: 4.0.8
+      vite: 6.3.3(@types/node@22.15.2)
 
   vite@6.3.3(@types/node@22.15.2):
     dependencies:

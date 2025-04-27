@@ -15,6 +15,5 @@
     "sourceMap": true,
     "erasableSyntaxOnly": true
   },
-  "include": ["packages/**/*", "vitest.config.ts"],
-  "ignore": ["node_modules", "dist", "sst-env.d.ts", "sst.config.ts"]
+  "ignore": ["node_modules", "dist"]
 }

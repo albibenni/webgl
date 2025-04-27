@@ -17,9 +17,6 @@ importers:
       vite:
         specifier: 6.3.3
         version: 6.3.3(@types/node@22.15.2)
-      vite-plugin-glsl:
-        specifier: 1.4.1
-        version: 1.4.1(rollup@4.40.0)(vite@6.3.3(@types/node@22.15.2))
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.1.0
@@ -298,15 +295,6 @@ packages:
   '@pkgr/core@0.2.4':
     resolution: {integrity: sha512-ROFF39F6ZrnzSUEmQQZUar0Jt4xVoP9WnDRdWwF4NNcXs3xBTLgBUDoOwW141y1jP+S8nahIbdxbFC7IShw9Iw==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
-  '@rollup/pluginutils@5.1.4':
-    resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
 
   '@rollup/rollup-android-arm-eabi@4.40.0':
     resolution: {integrity: sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==}
@@ -676,9 +664,6 @@ packages:
   estraverse@5.3.0:
     resolution: {integrity: sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==}
     engines: {node: '>=4.0'}
-
-  estree-walker@2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
@@ -1058,12 +1043,6 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite-plugin-glsl@1.4.1:
-    resolution: {integrity: sha512-LkfLZeHdyl0drA71GmCCfcTeLuXyn/DYwDfjzQrupvNYVwdFRvb7nkCnCm0o9LZRKxS4/8r7E3KNM7KQjWrWWQ==}
-    engines: {node: '>= 20.17.0', npm: '>= 10.8.3'}
-    peerDependencies:
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-
   vite-plugin-restart@0.4.2:
     resolution: {integrity: sha512-9aWN2ScJ8hbT7aC8SDeZnsbWapnslz1vhNq6Vgf2GU9WdN4NExlrWhtnu7pmtOUG3Guj8y6lPcUZ+ls7SVP33w==}
     peerDependencies:
@@ -1306,14 +1285,6 @@ snapshots:
       fastq: 1.19.1
 
   '@pkgr/core@0.2.4': {}
-
-  '@rollup/pluginutils@5.1.4(rollup@4.40.0)':
-    dependencies:
-      '@types/estree': 1.0.7
-      estree-walker: 2.0.2
-      picomatch: 4.0.2
-    optionalDependencies:
-      rollup: 4.40.0
 
   '@rollup/rollup-android-arm-eabi@4.40.0':
     optional: true
@@ -1717,8 +1688,6 @@ snapshots:
 
   estraverse@5.3.0: {}
 
-  estree-walker@2.0.2: {}
-
   estree-walker@3.0.3:
     dependencies:
       '@types/estree': 1.0.7
@@ -2064,13 +2033,6 @@ snapshots:
       - terser
       - tsx
       - yaml
-
-  vite-plugin-glsl@1.4.1(rollup@4.40.0)(vite@6.3.3(@types/node@22.15.2)):
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.40.0)
-      vite: 6.3.3(@types/node@22.15.2)
-    transitivePeerDependencies:
-      - rollup
 
   vite-plugin-restart@0.4.2(vite@6.3.3(@types/node@22.15.2)):
     dependencies:

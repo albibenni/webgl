@@ -17,8 +17,7 @@
   "dependencies": {
     "three": "0.176.0",
     "three-stdlib": "^2.35.16",
-    "vite": "6.3.3",
-    "vite-plugin-glsl": "1.4.1"
+    "vite": "6.3.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",

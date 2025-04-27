@@ -9,7 +9,7 @@ export default defineConfig({
   //plugins: [glsl()],
 
   root: "./", // Sources files (typically where index.html is)
-  //publicDir: "../static/", // Path from "root" to static assets (files that are served as they are)
+  publicDir: "../static/", // Path from "root" to static assets (files that are served as they are)
   server: {
     host: HOST,
     port: PORT,

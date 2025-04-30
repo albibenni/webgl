@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import config from "./config.ts";
+import config from "./config";
 import restart from "vite-plugin-restart";
 
 const HOST = config.server.host;

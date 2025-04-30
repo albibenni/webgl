@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "indent:check": "prettier . --check",
     "indent:write": "prettier . --write",
@@ -17,7 +17,7 @@
   "dependencies": {
     "three": "0.176.0",
     "three-stdlib": "^2.35.16",
-    "vite": "6.3.3"
+    "vite": "^6.3.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",

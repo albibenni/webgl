@@ -17,6 +17,12 @@ const scene = new THREE.Scene();
 const cube = new THREE.BoxGeometry(1, 1, 1);
 const mat = new THREE.MeshBasicMaterial({ color: 0xff0000 });
 const mesh = new THREE.Mesh(cube, mat);
+mesh.position.x = 0.4;
+mesh.position.y = -0.6;
+mesh.position.z = -1;
+console.log(mesh.position.length());
+mesh.position.normalize();
+
 scene.add(mesh);
 
 //Camera
@@ -24,6 +30,7 @@ const pCamera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
 pCamera.position.z = 3;
 scene.add(pCamera);
 
+console.log(mesh.position.distanceTo(pCamera.position));
 //Renderer
 const renderer = new THREE.WebGLRenderer();
 div.append(renderer.domElement);
